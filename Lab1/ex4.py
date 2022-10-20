@@ -25,4 +25,5 @@ for i in range(7):
         ax[i,z].scatter(x,y1)
         ax[i,z].scatter(x,y2)
         ax[i,z].set_title("Kolumna {} vs Kolumna {}".format(i+1,z+1))
-        #ax[i,z].set_ylim([-1,100]) opcjonalnie w celu wzrokowego potwierdzenia poprawnosci algorytmu
+        #ax[i,z].set_ylim([-1,100]) opcjonalnie w celu wzrokowego 
+        #potwierdzenia poprawnosci algorytmu

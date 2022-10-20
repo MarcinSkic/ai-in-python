@@ -6,7 +6,6 @@ Created on Tue Oct 18 11:06:52 2022
 @author: marcinskic
 """
 
-# TASK 1
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -18,6 +17,8 @@ data_excel = data_excel.iloc[:100,:7]
 columnsNames =np.array(list(data_excel.columns))
 data = data_excel.values
 
+
+# TASK 1
 even = data[::2,:]
 odd = data[1::2,:]
 subtracted = even-odd
@@ -37,7 +38,7 @@ changeFactor = data.mean(axis=0) / (np.spacing(data.std(axis=0))+data.std(axis=0
 #TASK 5
 mask_task5 = changeFactor == changeFactor.max()
 arr_task5 = data[:,mask_task5]
-print("Kolumna z największym współczynnikiem zmiany:",columnsNames[mask_task5][0])
+print("Kolumna z największym współczynnikiem zmiennosci:",columnsNames[mask_task5][0])
 
 #TASK 6
 mask_task6 = data>data.mean(axis=0)
