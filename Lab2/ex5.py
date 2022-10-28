@@ -35,6 +35,7 @@ for i in range(10):
     fig.tight_layout()
 
 #TRAINING LINEAR REGRESSION
+#Method to generate chart of regression
 def generateTestVsPredPlot(index,y_test,y_pred,title):
     minval = min(y_test.min(),y_pred.min())
     maxval = max(y_test.max(),y_pred.max())
@@ -45,8 +46,10 @@ def generateTestVsPredPlot(index,y_test,y_pred,title):
     ax[index].set_ylabel('y_pred')
     ax[index].set_title(title)
     
+#Method to train and test values with different treatment of outliers
 def runModel(X,y,repeats):
-    global y_test #Export this variables to skip returning all this values as big tuple
+    #Export this variables to skip returning all this values as big tuple
+    global y_test
     global y_pred_base
     global y_pred_mean
     global y_pred_no_outliers
@@ -89,11 +92,12 @@ def runModel(X,y,repeats):
     mean_mape_no_outliers /= repeats
 
 #Variables used through all testing
-fig, ax = plt.subplots(3,1,figsize=(5,15))  
 X = data[:,:-1]
 y = data[:,-1]
 repeats = 20
 
+#Running and visualizing model
+fig, ax = plt.subplots(3,1,figsize=(5,15)) 
 runModel(X,y,repeats)
 
 generateTestVsPredPlot(0,y_test, y_pred_base, 'Base prediction, mape: {}'.format(mean_mape_base))
@@ -123,8 +127,8 @@ extra_data = np.stack([
     ],axis=-1)
 X_extra = np.concatenate([X,extra_data],axis=-1)
 
+#Running and visualizing model
 fig, ax = plt.subplots(3,1,figsize=(5,15))  
-
 runModel(X_extra,y,repeats)
 generateTestVsPredPlot(0,y_test, y_pred_base, 'Base prediction, mape: {}'.format(mean_mape_base))
 generateTestVsPredPlot(1,y_test, y_pred_mean, 'Outliers replaced, mape: {}'.format(mean_mape_mean))
