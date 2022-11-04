@@ -9,8 +9,9 @@ Created on Fri Oct 28 16:55:20 2022
 import pandas as pd
 import numpy as np
 data = pd.read_excel('practice_lab_3.xlsx')
+originalData = data.copy()
 columns = list(data.columns)
-mask = data ['Gender'].values == 'Female'
+mask = data['Gender'].values == 'Female'
 data.loc[mask, 'Gender'] = 1
 data.loc[~mask, 'Gender'] = 0
 #%%
