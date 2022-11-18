@@ -5,7 +5,7 @@ Created on Fri Nov  4 17:07:20 2022
 
 @author: marcinskic
 """
-
+#%%Obliczanie metryk klasyfikacji
 TN = 7
 FP = 26
 FN = 17
