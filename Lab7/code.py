@@ -8,14 +8,6 @@ from keras.optimizers import Adam
 from keras.datasets import mnist, cifar10
 import matplotlib.pyplot as plt
 import numpy as np
-#%%DATA LOAD AND SPLIT FOR 7.2 AND 7.3
-train, test = mnist.load_data()
-X_train, y_train = train[0], train[1]
-X_test, y_test = test[0], test[1]
-X_train = np.expand_dims(X_train, axis=-1)
-X_test = np.expand_dims(X_test, axis=-1)
-
-class_cnt = np.unique(y_train).shape[0]
 #%%PARAMETERS DEFINING
 
 filter_cnt = 32
@@ -26,6 +18,15 @@ kernel_size = (3,3)
 pooling_size = (2,2)
 conv_rule = 'same'
 layers_cnt = 4
+#%%DATA LOAD AND SPLIT FOR 7.2 AND 7.3
+train, test = mnist.load_data()
+X_train, y_train = train[0], train[1]
+X_test, y_test = test[0], test[1]
+X_train = np.expand_dims(X_train, axis=-1)
+X_test = np.expand_dims(X_test, axis=-1)
+
+class_cnt = np.unique(y_train).shape[0]
+
 #%%LAB7EX2
 #BUILDING MODEL
 def build_model(num_of_layers):
