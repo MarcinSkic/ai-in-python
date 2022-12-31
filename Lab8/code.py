@@ -125,6 +125,7 @@ def buildDenseNet(input_tensor):
 ANN = Model(inputs = input_tensor, outputs = buildDenseNet(input_tensor))
 ANN.compile(loss = 'categorical_crossentropy',metrics = 'accuracy',optimizer = 'adam')
 plot_model(ANN, show_shapes=True)
+#%%LAB8EX4
 import tensorflow as tf
 
 def Mish(tensor):
