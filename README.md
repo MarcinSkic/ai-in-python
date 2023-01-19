@@ -23,6 +23,7 @@ Class in Uni about simple AI used in Data Science.
 ---
 ### Used technologies
 [<img align="left" width="26px" style="padding-right: 20px" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>][python]
+[<img align="left" width="26px" style="padding-right: 20px" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"/>][jupyter]
 [<img align="left" width="26px" style="padding-right: 20px" alt="Anaconda" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg"/>][anaconda]
 [<img align="left" width="26px" style="padding-right: 20px" alt="NumPy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"/>][numpy]
 [<img align="left" width="26px" style="padding-right: 20px" alt="Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"/>][pandas]
@@ -32,6 +33,7 @@ Class in Uni about simple AI used in Data Science.
 [<img align="left" width="26px" style="padding-right: 20px" alt="PyTorch" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"/>][pytorch]
 
 [python]: https://www.python.org/
+[jupyter]: https://jupyter.org/
 [anaconda]: https://www.anaconda.com/
 [numpy]: https://numpy.org/
 [pandas]: https://pandas.pydata.org/
