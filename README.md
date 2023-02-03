@@ -18,8 +18,8 @@ Class in Uni about simple AI used in Data Science.
 - Deep Neural Networks, Google Collab
 - Image recognition, Convolution Networks, MNIST dataset
 - TensorFlow: Split Networks, Periodic Networks
-- Autoencoders: noise reduction
-- GAN (ToFill&trade;)
+- Autoencoders: noise reduction, "new" data generation
+- GAN: truly new data generation, competing networks
 ---
 ### Used technologies
 [<img align="left" width="26px" style="padding-right: 20px" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>][python]
